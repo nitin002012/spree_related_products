@@ -9,6 +9,7 @@ module SpreeRelatedProducts
 
     initializer 'spree_related_products.add_menu_item' do |app|
       Spree::Backend::Config.configure do |config|
+        config.menu_items ||= []
         config.menu_items << config.class::MenuItem.new(
           [:related_products],
           'project-diagram',
@@ -25,6 +26,7 @@ module SpreeRelatedProducts
         end
       end
     end
+    
 
     config.to_prepare(&method(:activate).to_proc)
   end
