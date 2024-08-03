@@ -22,10 +22,10 @@ Gem::Specification.new do |s|
   s.requirements << 'none'
 
   spree_version =  '~>4.6.6'
-  s.add_dependency 'spree_core', spree_version
-  s.add_dependency 'spree_backend', spree_version
+  s.add_dependency 'spree_core', '~>4.6.6'
+  s.add_dependency 'spree_backend', '~>4.6.6'
   s.add_runtime_dependency 'spree_extension'
-  s.add_dependency 'deface', '~> 1.0'
+  s.add_dependency 'deface'
 
   s.add_development_dependency 'spree_dev_tools'
   s.add_development_dependency 'shoulda-matchers'
