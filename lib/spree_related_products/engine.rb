@@ -4,7 +4,8 @@ module SpreeRelatedProducts
     isolate_namespace Spree
     engine_name 'spree_related_products'
 
-    config.autoload_paths += %W(#{config.root}/lib #{config.root}/app/models/spree/calculator)
+    config.autoload_paths ||= []
+    config.autoload_paths << "#{root}/lib"
 
     initializer 'spree_related_products.add_menu_item' do |app|
       Spree::Backend::Config.configure do |config|
