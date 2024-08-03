@@ -1,0 +1,18 @@
+---
+ru:
+  activerecord:
+    models:
+      spree/relation:
+        one: Oтношение
+        other: Oтношения
+      spree/relation_type:
+        one: Тип Oтношений
+        other: Типы Отношений
+  spree:
+    new_relation_type: Новый Тип Отношений
+    related_product_discount: Скидка На Относящийся Товар
+    applies_to: Применяется К
+    related_products: Относящиеся Товары
+    add_related_product: Добавить Относящийся Товар
+    name_or_sku_short: Название или Артикул
+    no_relation_types: Перед тем как поспользоваться этим функционалом настройте Типы Отношений.

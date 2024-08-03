@@ -1,0 +1,18 @@
+---
+sv:
+  activerecord:
+    models:
+      spree/relation:
+        one: Relation
+        other: Relationer
+      spree/relation_type:
+        one: Relationstyp
+        other: Relationstyper
+  spree:
+    new_relation_type: Ny typ av relation
+    related_product_discount: Relaterad produkt rabatt
+    applies_to: Gäller
+    related_products: Relaterade produkter
+    add_related_product: Lägg till relaterad produkt
+    name_or_sku_short: Namn eller SKU
+    no_relation_types: Du måste konfigurera relationstyper innan du kan använda den här funktionen.

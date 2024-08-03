@@ -1,0 +1,18 @@
+---
+pt-BR:
+  activerecord:
+    models:
+      spree/relation:
+        one: Relação
+        other: Relaçãos
+      spree/relation_type:
+        one: Tipo de relação
+        other: Tipos de relação
+  spree:
+    new_relation_type: Novo tipo de relacionamento
+    related_product_discount: Desconto de produto relacionado
+    applies_to: Aplicado à
+    related_products: Produtos relacionados
+    add_related_product: Adicionar produto relacionado
+    name_or_sku_short: Nome ou SKU
+    no_relation_types: Você precisa configurar os tipos de relacionamento antes de utilizar esta funcionalidade.
