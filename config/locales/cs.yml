@@ -1,0 +1,18 @@
+---
+cs:
+  activerecord:
+    models:
+      spree/relation:
+        one: Relation
+        other: Relations
+      spree/relation_type:
+        one: Relation Type
+        other: Typy vztahů
+  spree:
+    new_relation_type: Nový typ relace
+    related_product_discount: Sleva pro související zboží
+    applies_to: Platí pro
+    related_products: Související zboží
+    add_related_product: Nové související zboží
+    name_or_sku_short: Název nebo SKU
+    no_relation_types: 'Musíte nastavit typy vztahů, než budete moci použít tuto funkci.'

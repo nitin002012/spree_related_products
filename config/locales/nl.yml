@@ -1,0 +1,18 @@
+---
+nl:
+  activerecord:
+    models:
+      spree/relation:
+        one: Relatie
+        other: Relatie
+      spree/relation_type:
+        one: Relatie type
+        other: Relatie types
+  spree:
+    new_relation_type: Nieuw relatie type
+    related_product_discount: Korting gerelateerd product
+    applies_to: Toegepast op
+    related_products: Gerelateerde producten
+    add_related_product: Gerelateerd product toevoegen
+    name_or_sku_short: Naam of SKU
+    no_relation_types: Je moet relatie types instellen voordat je deze functie kan gebruiken.

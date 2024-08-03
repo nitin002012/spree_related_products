@@ -1,0 +1,18 @@
+---
+de:
+  activerecord:
+    models:
+      spree/relation:
+        one: Verwandte
+        other: Verhältnis
+      spree/relation_type:
+        one: Verwandschaftstyp
+        other: Verwandschaftstypen
+  spree:
+    new_relation_type: Neuer Verwandschaftstyp
+    related_product_discount: Skonto für verwandte Produkte
+    applies_to: Anwenden auf
+    related_products: Verwandte Produkte
+    add_related_product: Verwandtes Produkt hinzufügen
+    name_or_sku_short: Name oder Artikelnummer
+    no_relation_types: "Sie müssen Verwandschaftstypen konfigurieren, bevor Sie diese Funktion nutzen können."
