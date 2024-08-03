@@ -6,18 +6,16 @@ module SpreeRelatedProducts
 
     config.autoload_paths += %W(#{config.root}/lib #{config.root}/app/models/spree/calculator)
 
-    initializer 'spree_related_products.menu_items' do
+    initializer 'spree_related_products.add_menu_item' do |app|
       Spree::Backend::Config.configure do |config|
-        config.menu_items ||= []  # Initialize the array if it's nil
-        # Replace 'some_new_item' with the actual item you want to add
-        config.menu_items << {
-          :label => 'Related Products',
-          :route => :related_admin_products_path,
-          :condition => -> { can?(:manage, Spree::Product) }
-        }
-      end
+        config.menu_items << config.class::MenuItem.new(
+          [:related_products],
+          'project-diagram',
+          url: :related_admin_products_path,
+          condition: -> { can?(:manage, Spree::Product) }
+        )
+      end if defined?(Spree::Backend::Config)
     end
-
     class << self
       def activate
         cache_klasses = %W(#{config.root}/app/**/*_decorator*.rb)
